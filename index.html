@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Ultimate Battle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="game-header">
+        <div class="header-content">
+            <h1 class="game-title">⚔️ Rock Paper Scissors ⚔️</h1>
+            <p class="game-subtitle">Challenge the Computer in this Epic Battle!</p>
+        </div>
+    </header>
+
+    <main class="game-main">
+        <section class="game-info">
+            <div class="round-info">
+                <span class="round-text">Round <span id="roundNumber">1</span></span>
+            </div>
+        </section>
+
+        <section class="scoreboard">
+            <div class="score-card user-score">
+                <div class="score-icon">👤</div>
+                <div class="score-details">
+                    <h3>You</h3>
+                    <div class="score-value" id="userscore">0</div>
+                </div>
+            </div>
+            <div class="vs-divider">VS</div>
+            <div class="score-card computer-score">
+                <div class="score-icon">🤖</div>
+                <div class="score-details">
+                    <h3>Computer</h3>
+                    <div class="score-value" id="compscore">0</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-area">
+            <div class="choices-container">
+                <div class="choice" id="rock" data-choice="rock">
+                    <div class="choice-icon">🪨</div>
+                    <span class="choice-name">Rock</span>
+                </div>
+                <div class="choice" id="paper" data-choice="paper">
+                    <div class="choice-icon">📄</div>
+                    <span class="choice-name">Paper</span>
+                </div>
+                <div class="choice" id="scissor" data-choice="scissor">
+                    <div class="choice-icon">✂️</div>
+                    <span class="choice-name">Scissors</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-area">
+            <div class="msgcontainer">
+                <p id="msg">Choose your weapon to begin the battle!</p>
+            </div>
+            <div class="choices-display" id="choicesDisplay">
+                <div class="choice-display user-choice">
+                    <span class="choice-label">Your Choice:</span>
+                    <span class="choice-result" id="userChoiceDisplay">-</span>
+                </div>
+                <div class="choice-display computer-choice">
+                    <span class="choice-label">Computer's Choice:</span>
+                    <span class="choice-result" id="computerChoiceDisplay">-</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-controls">
+            <button class="reset-btn" id="resetBtn">🔄 Reset Game</button>
+        </section>
+    </main>
+
+    <footer class="game-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>How to Play</h4>
+                <p>Rock beats Scissors • Scissors beats Paper • Paper beats Rock</p>
+            </div>
+            <div class="footer-section">
+                <h4>Game Rules</h4>
+                <p>First to 10 wins becomes the champion! Good luck!</p>
+            </div>
+            <div class="footer-section">
+                <h4> 2024 Rock Paper Scissors</h4>
+                <p>Built with ❤️ for gaming enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="first.js"></script>
+</body>
+</html>
